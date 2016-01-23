@@ -114,88 +114,88 @@ Mikäli taustasi on Fluxissa, niin on yksi tärkeä asia joka tulee huomioida. R
 
 Tämänkaltainen arkkitehtuuri voi vaikuttaa liioittelulta laskuriohjelmalle, mutta tämän toimintamallin etuna on se, kuinka hyvin se skaalautuu suuriin ja monimutkaisiin ohjelmistoihin. Lisäksi tämä toimintamalli mahdollistaa erittäin hyödylliset kehitystyökalut, sillä jokainen mutaatio on mahdollista jäljittää toimintoon, joka sen aiheutti. Voit esimerkiksi nauhoittaa käyttäjäsessioita ja toistaa ne ajamalla niiden toiminnot järjestyksessä.
 
-### Learn Redux from Its Creator
+### Opi Reduxia suoraan luojaltaan
 
-[Getting Started with Redux](https://egghead.io/series/getting-started-with-redux) is a video course consisting of 30 videos narrated by Dan Abramov, author of Redux. It is designed to complement the “Basics” part of the docs while bringing additional insights about immutability, testing, Redux best practices, and using Redux with React. **This course is free and will always be.**
+[Alkuun Reduxin kanssa](https://egghead.io/series/getting-started-with-redux) on videokurssi, joka koostuu 30:sta Dan Abramovin, Reduxin luojan, juontamasta jaksosta. Se on luotu täydentämään dokumentaation perusteiden osioita tuoden kuitenkin lisää näkemystä asioihin kuten mutatoimattomuuteen, testaukseen, Reduxin suositeltuihin käytänöihin sekä Reduxin käyttöön Reactin kanssa. **Kurssi on ilmainen ja tulee aina olemaan.**
 
->[“Great course on egghead.io by @dan_abramov - instead of just showing you how to use #redux, it also shows how and why redux was built!”](https://twitter.com/sandrinodm/status/670548531422326785)  
+>[“Hieno kurssi egghead.io:ssa @dan_abramov'lta - pelkän käytön näyttämisen lisäksi hän kertoo miten ja miksi #redux luotiin!”](https://twitter.com/sandrinodm/status/670548531422326785)  
 >Sandrino Di Mattia
 
->[“Plowing through @dan_abramov 'Getting Started with Redux' - its amazing how much simpler concepts get with video.”](https://twitter.com/chrisdhanaraj/status/670328025553219584)  
+>[“Kynnän läpi @dan_abramov'n 'Alkuun Reduxin kanssa' - on uskomatonta kuinka konseptit ovat yksinkertaisempia ymmärtää videolta katsellen.”](https://twitter.com/chrisdhanaraj/status/670328025553219584)  
 >Chris Dhanaraj
 
->[“This video series on Redux by @dan_abramov on @eggheadio is spectacular!”](https://twitter.com/eddiezane/status/670333133242408960)  
+>[“Tämä @dan_abramov'n videosarja Reduxista @eggheadio:ssa on loistava!”](https://twitter.com/eddiezane/status/670333133242408960)  
 >Eddie Zaneski
 
->[“Come for the name hype. Stay for the rock solid fundamentals. (Thanks, and great job @dan_abramov and @eggheadio!)”](https://twitter.com/danott/status/669909126554607617)  
+>[“Tulin nimen hehkutuksen vuoksi. Pysyin kallion lujien perusteiden vuoksi. (Kiitos ja hyvää työtä @dan_abramov sekä @eggheadio!)”](https://twitter.com/danott/status/669909126554607617)  
 >Dan
 
->[“This series of videos on Redux by @dan_abramov is repeatedly blowing my mind - gunna do some serious refactoring”](https://twitter.com/gelatindesign/status/669658358643892224)  
+>[“Tämä videosarja Reduxista @dan_abramov'n toimesta räjäyttää tajuntaani toistuvasti - pittää refaktoroida rankasti”](https://twitter.com/gelatindesign/status/669658358643892224)  
 >Laurence Roberts
 
-So, what are you waiting for?
+Joten mitä vielä odotat?
 
-#### [Watch the 30 Free Videos!](https://egghead.io/series/getting-started-with-redux) 
+#### [Katso 30 ilmaista videoita!](https://egghead.io/series/getting-started-with-redux) (englanniksi)
 
-If you enjoyed my course, consider supporting Egghead by [buying a subscription](https://egghead.io/pricing). Subscribers have access to the source code for the example in every one of my videos, as well as to tons of advanced lessons on other topics, including JavaScript in depth, React, Angular, and more. Many [Egghead instructors](https://egghead.io/instructors) are also open source library authors, so buying a subscription is a nice way to thank them for the work that they’ve done.
+Jos pidit kurssista, niin harkitsethan Eggheadin tukemista [alkamalla tilaajaksi](https://egghead.io/pricing). Tilaajat saavat pääsyn lähdekoodiin jokaisessa videossani, sekä pääsyn lukuisiin muihin kehittyneisiin oppitunteihin muista aiheissa mukaanlukien JavaScript, React, Angular ja monta muuta. Monet [Eggheadin kouluttajista](https://egghead.io/instructors) ovat myös avoimen lähdekoodin kirjastojen tekijöitä, joten tilaus on hieno tapa kiittää heitä heidän tekemästään työstä.
 
-### Documentation
+### Dokumentaatio (linkit päivittämättä)
 
-* [Introduction](http://rackt.github.io/redux/docs/introduction/index.html)
-* [Basics](http://rackt.github.io/redux/docs/basics/index.html)
-* [Advanced](http://rackt.github.io/redux/docs/advanced/index.html)
-* [Recipes](http://rackt.github.io/redux/docs/recipes/index.html)
-* [Troubleshooting](http://rackt.github.io/redux/docs/Troubleshooting.html)
-* [Glossary](http://rackt.github.io/redux/docs/Glossary.html)
-* [API Reference](http://rackt.github.io/redux/docs/api/index.html)
+* [Esittely](http://rackt.github.io/redux/docs/introduction/index.html)
+* [Perusteet](http://rackt.github.io/redux/docs/basics/index.html)
+* [Kehittynyt käyttö](http://rackt.github.io/redux/docs/advanced/index.html)
+* [Reseptit](http://rackt.github.io/redux/docs/recipes/index.html)
+* [Ongelmienratkaisu](http://rackt.github.io/redux/docs/Troubleshooting.html)
+* [Sanasto](http://rackt.github.io/redux/docs/Glossary.html)
+* [API](http://rackt.github.io/redux/docs/api/index.html)
 
-For PDF, ePub, and MOBI exports for offline reading, and instructions on how to create them, please see: [paulkogel/redux-offline-docs](https://github.com/paulkogel/redux-offline-docs).
+Halutessasi PDF-, ePub- tai MOBI-version offlinelukemista varten, sekä löytääksesi ohjeet kuinka luoda ne, katso see: [paulkogel/redux-offline-docs](https://github.com/paulkogel/redux-offline-docs) (englanniksi).
 
-### Examples
+### Esimerkkejä (linkit päivittämättä)
 
-* [Counter](http://rackt.github.io/redux/docs/introduction/Examples.html#counter) ([source](https://github.com/rackt/redux/tree/master/examples/counter))
+* [Laskuri](http://rackt.github.io/redux/docs/introduction/Examples.html#counter) ([source](https://github.com/rackt/redux/tree/master/examples/counter))
 * [TodoMVC](http://rackt.github.io/redux/docs/introduction/Examples.html#todomvc) ([source](https://github.com/rackt/redux/tree/master/examples/todomvc))
-* [Todos with Undo](http://rackt.github.io/redux/docs/introduction/Examples.html#todos-with-undo) ([source](https://github.com/rackt/redux/tree/master/examples/todos-with-undo))
-* [Async](http://rackt.github.io/redux/docs/introduction/Examples.html#async) ([source](https://github.com/rackt/redux/tree/master/examples/async))
-* [Universal](http://rackt.github.io/redux/docs/introduction/Examples.html#universal) ([source](https://github.com/rackt/redux/tree/master/examples/universal))
-* [Real World](http://rackt.github.io/redux/docs/introduction/Examples.html#real-world) ([source](https://github.com/rackt/redux/tree/master/examples/real-world))
-* [Shopping Cart](http://rackt.github.io/redux/docs/introduction/Examples.html#shopping-cart) ([source](https://github.com/rackt/redux/tree/master/examples/shopping-cart))
+* [Todo ja peruminen](http://rackt.github.io/redux/docs/introduction/Examples.html#todos-with-undo) ([source](https://github.com/rackt/redux/tree/master/examples/todos-with-undo))
+* [Asynkronisuus](http://rackt.github.io/redux/docs/introduction/Examples.html#async) ([source](https://github.com/rackt/redux/tree/master/examples/async))
+* [Universaalius](http://rackt.github.io/redux/docs/introduction/Examples.html#universal) ([source](https://github.com/rackt/redux/tree/master/examples/universal))
+* [Oikea maailma](http://rackt.github.io/redux/docs/introduction/Examples.html#real-world) ([source](https://github.com/rackt/redux/tree/master/examples/real-world))
+* [Ostoskori](http://rackt.github.io/redux/docs/introduction/Examples.html#shopping-cart) ([source](https://github.com/rackt/redux/tree/master/examples/shopping-cart))
 
-If you’re new to the NPM ecosystem and have troubles getting a project up and running, or aren’t sure where to paste the gist above, check out [simplest-redux-example](https://github.com/jackielii/simplest-redux-example) that uses Redux together with React and Browserify.
+Jos NPM on uusi asia ja et pääse vauhtiin projektin kanssa, tai jos et ole varma minne pastettaa ylläolevia gistejä, niin kurkkaa [simplest-redux-example](https://github.com/jackielii/simplest-redux-example), joka käyttää Reduxia yhdessä Reactin ja Browserifyn kanssa.
 
-### Discussion
+### Keskustelu
 
-Join the [#redux](https://discord.gg/0ZcbPKXt5bZ6au5t) channel of the [Reactiflux](http://www.reactiflux.com) Discord community.
+Liity [#redux](https://discord.gg/0ZcbPKXt5bZ6au5t)-kanavalle [Reactiflux](http://www.reactiflux.com) Discord-yhteisössä.
 
-### Thanks
+### Kiitokset
 
-* [The Elm Architecture](https://github.com/evancz/elm-architecture-tutorial) for a great intro to modeling state updates with reducers;
-* [Turning the database inside-out](http://www.confluent.io/blog/turning-the-database-inside-out-with-apache-samza/) for blowing my mind;
-* [Developing ClojureScript with Figwheel](https://www.youtube.com/watch?v=j-kj2qwJa_E) for convincing me that re-evaluation should “just work”;
-* [Webpack](https://github.com/webpack/docs/wiki/hot-module-replacement-with-webpack) for Hot Module Replacement;
-* [Flummox](https://github.com/acdlite/flummox) for teaching me to approach Flux without boilerplate or singletons;
-* [disto](https://github.com/threepointone/disto) for a proof of concept of hot reloadable Stores;
-* [NuclearJS](https://github.com/optimizely/nuclear-js) for proving this architecture can be performant;
-* [Om](https://github.com/omcljs/om) for popularizing the idea of a single state atom;
-* [Cycle](https://github.com/cyclejs/cycle-core) for showing how often a function is the best tool;
-* [React](https://github.com/facebook/react) for the pragmatic innovation.
+* [Elm-arkkitehtuurille](https://github.com/evancz/elm-architecture-tutorial) upeasta johdatuksesta tilanmallintamiseen pelkistimiä käyttäen;
+* [Tietokannan kääntö nurinkurin](http://www.confluent.io/blog/turning-the-database-inside-out-with-apache-samza/) räjäytti mieleni;
+* [Kehittäminen ClojureScriptillä käyttäen Figwheeliä](https://www.youtube.com/watch?v=j-kj2qwJa_E) vakuutti minut siitä, että uudelleenevaluoinnin tulisi toimia suorilta;
+* [Webpackille](https://github.com/webpack/docs/wiki/hot-module-replacement-with-webpack) välittömästä moduulin korvauksesta;
+* [Flummox](https://github.com/acdlite/flummox) opetti minulle lähestymisen Fluxiin välttäen turhan boilerplaten ja singletoneihin tukeutumisen;
+* [disto](https://github.com/threepointone/disto) toimi näytteenä säilöjen välittömästä uudelleenlatauksesta;
+* [NuclearJS](https://github.com/optimizely/nuclear-js) osoitti sen, että tämänkaltainen arkkitehtuuri voi olla suorituskykyinen;
+* [Om](https://github.com/omcljs/om) popularisoi idean yksittäisestä lähdetilasta;
+* [Cycle](https://github.com/cyclejs/cycle-core) osoitti kuinka funktio on usein paras työkalu;
+* [Reactille](https://github.com/facebook/react) käytännöllisestä innovoinnista.
 
-Special thanks to [Jamie Paton](http://jdpaton.github.io) for handing over the `redux` NPM package name.
+Erityiskiitokset [Jamie Patonille](http://jdpaton.github.io) `redux`-pakettinimen luovuttamisesta NPM:ssä.
 
-### Change Log
+### Muutosloki
 
-This project adheres to [Semantic Versioning](http://semver.org/).  
-Every release, along with the migration instructions, is documented on the Github [Releases](https://github.com/rackt/redux/releases) page.
+Tämä projekti noudattaa [semanttista versiointia](http://semver.org/).  
+Jokainen julkaisu migraatio-ohjeineen on dokumentoitu Githubin [Releases](https://github.com/rackt/redux/releases)-sivulla.
 
-### Patrons
+### Tukijat (patrons)
 
-The work on Redux was [funded by the community](https://www.patreon.com/reactdx).  
-Meet some of the outstanding companies that made it possible:
+Työ Reduxin eteen on [yhteisön rahoittama](https://www.patreon.com/reactdx).  
+Tässä osa mahtavista yrityksistä, jotka tekivät työn mahdolliseksi:
 
 * [Webflow](https://webflow.com/)
 * [Chess iX](http://www.chess-ix.com/)
 
-[See the full list of Redux patrons.](PATRONS.md)
+[Katso koko lista Reduxin tukijoista.](PATRONS.md)
 
 ### License
 
