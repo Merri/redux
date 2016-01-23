@@ -56,27 +56,27 @@ Oletuksena on että käytät [npm](https://www.npmjs.com/)-paketinhallintaa yhde
 
 Mikäli et vielä käytä [npm:ää](https://www.npmjs.com/) tai modernia moduuliniputtajaa ja suosit mieluummin yhden tiedoston [UMD](https://github.com/umdjs/umd) buildia, joka tuo `Reduxin` saataville globaalina objektina, voit hakea valmiiksi luodun version [cdnjs:stä](https://cdnjs.com/libraries/redux). *Emme* suosittele tätä tapaa vakavaan käyttöön, sillä valtaosa Reduxia tukevista kirjastoista ovat ainoastaan saatavilla [npm:ssä](https://www.npmjs.com/).
 
-### The Gist
+### Pähkinänkuoressa
 
-The whole state of your app is stored in an object tree inside a single *store*.  
-The only way to change the state tree is to emit an *action*, an object describing what happened.  
-To specify how the actions transform the state tree, you write pure *reducers*.
+Kaikki ohjelman tila (state) on säilöttynä objektipuuna yksittäisessä *säilössä* (store).  
+Ainut tapa muuttaa tilapuuta on lähettää *toiminto* (action), joka on muutoksen kuvaava objekti.  
+Toimintojen vaikutus tilapuuhun määritellään käyttäen puhtaita *pelkistimiä* (pure reducer).
 
-That’s it!
+Siinä kaikki!
 
 ```js
 import { createStore } from 'redux'
 
 /**
- * This is a reducer, a pure function with (state, action) => state signature.
- * It describes how an action transforms the state into the next state.
+ * Tämä on pelkistin, joka on (tila, toiminto) => tila -mallia noudattava puhdas funktio.
+ * Se kuvaa kuinka toiminto muuttaa tilan seuraavaksi tilaksi.
  *
- * The shape of the state is up to you: it can be a primitive, an array, an object,
- * or even an Immutable.js data structure. The only important part is that you should
- * not mutate the state object, but return a new object if the state changes.
+ * Tilan rakenne on päätettävissäsi: se voi olla primitiivi, taulukko, objekti tai jopa
+ * Immutable.js:n tietorakenne. Ainut tärkeä asia on, että tilaobjektia ei saa mutatoida
+ * vaan lopputulemana tulee palauttaa uusi objekti silloin kun tila muuttuu.
  *
- * In this example, we use a `switch` statement and strings, but you can use a helper that
- * follows a different convention (such as function maps) if it makes sense for your project.
+ * Tässä esimerkissä käytämme `switch`:iä ja merkkijonoja, mutta voit käyttää eri konventiota
+ * noudattavaa helpperiä (kuten funktiokartat), mikäli se tekee tolkkua projektissasi.
  */
 function counter(state = 0, action) {
   switch (action.type) {
@@ -89,17 +89,17 @@ function counter(state = 0, action) {
   }
 }
 
-// Create a Redux store holding the state of your app.
-// Its API is { subscribe, dispatch, getState }.
+// Luo redux-säilön ohjelman tilaa varten.
+// Sen API on { subscribe, dispatch, getState }.
 let store = createStore(counter)
 
-// You can subscribe to the updates manually, or use bindings to your view layer.
+// Päivityksiin voi liittyä manuaalisesti tai käyttäen näkymän sidoksia.
 store.subscribe(() =>
   console.log(store.getState())
 )
 
-// The only way to mutate the internal state is to dispatch an action.
-// The actions can be serialized, logged or stored and later replayed.
+// Ainut tapa aiheuttaa mutaatio sisäiseen tilaan on välittää (dispatch) toiminto.
+// Toimintoja voi serialisoida, lokittaa tai säilöä, ja toistaa myöhemmin.
 store.dispatch({ type: 'INCREMENT' })
 // 1
 store.dispatch({ type: 'INCREMENT' })
@@ -108,11 +108,11 @@ store.dispatch({ type: 'DECREMENT' })
 // 1
 ```
 
-Instead of mutating the state directly, you specify the mutations you want to happen with plain objects called *actions*. Then you write a special function called a *reducer* to decide how every action transforms the entire application’s state.
+Suoran tilan mutatoinnin sijaan toteutettavat mutaatiot kuvataan käyttäen normaaleja objekteja, joita kutsutaan *toiminnoiksi* (action). Tämän jälkeen toteutetaan *pelkistin* (reducer), joka päättää kuinka kukin toiminto muokkaa koko ohjelman tilaa.
 
-If you’re coming from Flux, there is a single important difference you need to understand. Redux doesn’t have a Dispatcher or support many stores. Instead, there is just a single store with a single root reducing function. As your app grows, instead of adding stores, you split the root reducer into smaller reducers independently operating on the different parts of the state tree. This is exactly like there is just one root component in a React app, but it is composed out of many small components.
+Mikäli taustasi on Fluxissa, niin on yksi tärkeä asia joka tulee huomioida. Reduxilla ei ole Dispatcheria eikä se tue useampaa säilöä. Näiden sijaan on olemassa vain yksi säilö ja sillä vain yksi juuritason pelkistinfunktio. Ohjelman kasvaessa säilöjen lisäämisen sijasta tehdään vastuunjakoa toteuttamalla pienempiä pelkistimiä, jotka vastaavat omasta osastaan tilapuuta itsenäisesti. Tämä on juuri kuten Reactissa, jossa on vain yksi juurikomponentti, mutta jonka sisällä on monia pienempiä komponentteja.
 
-This architecture might seem like an overkill for a counter app, but the beauty of this pattern is how well it scales to large and complex apps. It also enables very powerful developer tools, because it is possible to trace every mutation to the action that caused it. You can record user sessions and reproduce them just by replaying every action.
+Tämänkaltainen arkkitehtuuri voi vaikuttaa liioittelulta laskuriohjelmalle, mutta tämän toimintamallin etuna on se, kuinka hyvin se skaalautuu suuriin ja monimutkaisiin ohjelmistoihin. Lisäksi tämä toimintamalli mahdollistaa erittäin hyödylliset kehitystyökalut, sillä jokainen mutaatio on mahdollista jäljittää toimintoon, joka sen aiheutti. Voit esimerkiksi nauhoittaa käyttäjäsessioita ja toistaa ne ajamalla niiden toiminnot järjestyksessä.
 
 ### Learn Redux from Its Creator
 
