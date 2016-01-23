@@ -135,7 +135,7 @@ Tämänkaltainen arkkitehtuuri voi vaikuttaa liioittelulta laskuriohjelmalle, mu
 
 Joten mitä vielä odotat?
 
-#### [Katso 30 ilmaista videoita!](https://egghead.io/series/getting-started-with-redux) (englanniksi)
+#### [Katso 30 ilmaista videota!](https://egghead.io/series/getting-started-with-redux) (englanniksi)
 
 Jos pidit kurssista, niin harkitsethan Eggheadin tukemista [alkamalla tilaajaksi](https://egghead.io/pricing). Tilaajat saavat pääsyn lähdekoodiin jokaisessa videossani, sekä pääsyn lukuisiin muihin kehittyneisiin oppitunteihin muista aiheissa mukaanlukien JavaScript, React, Angular ja monta muuta. Monet [Eggheadin kouluttajista](https://egghead.io/instructors) ovat myös avoimen lähdekoodin kirjastojen tekijöitä, joten tilaus on hieno tapa kiittää heitä heidän tekemästään työstä.
 
