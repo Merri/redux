@@ -4,7 +4,7 @@ Redux on ennustettava tilasäilö JavaScript-ohjelmille.
 
 Voit tämän avulla kirjoittaa ohjelmia, jotka käyttäytyvät määrätysti, ovat suoritettavissa eri ympäristöissä (selaimessa, palvelimella ja natiiveina) sekä ovat helposti testattavissa. Näiden etujen lisäksi Redux tarjoaa hyvän käyttökokemuksen kehittäjälle, kuten [suorituksenaikaisen koodinmuokkauksen ja aikamatkaavan debuggerin](https://github.com/gaearon/redux-devtools).
 
-Reduxia voi käyttää yhdessä [Reactin](https://facebook.github.io/react/) tai minkä tahansa muun UI-kirjaston kanssa.  
+Reduxia voi käyttää yhdessä [Reactin](https://facebook.github.io/react/) tai minkä tahansa muun näkymäkirjaston kanssa.  
 Redux on pieni (2 kt) ja sillä ei ole riippuvuuksia.
 
 [![build status](https://img.shields.io/travis/rackt/redux/master.svg?style=flat-square)](https://travis-ci.org/rackt/redux)
@@ -15,7 +15,7 @@ Redux on pieni (2 kt) ja sillä ei ole riippuvuuksia.
 [![Changelog #187](https://img.shields.io/badge/changelog-%23187-lightgrey.svg?style=flat-square)](https://changelog.com/187)
 
 >**Uutta! Opi Reduxia suoraan luojaltaan:  
->[Alkuun Reduxin kanssa (Getting Started with Redux)](https://egghead.io/series/getting-started-with-redux) (30 englanninkielistä ilmaista videota)**
+>[Alkuun Reduxin kanssa](https://egghead.io/series/getting-started-with-redux) (30 englanninkielistä ilmaista videota)**
 
 ### Arvostusta
 
@@ -93,7 +93,7 @@ function counter(state = 0, action) {
 // Sen API on { subscribe, dispatch, getState }.
 let store = createStore(counter)
 
-// Päivityksiin voi liittyä manuaalisesti tai käyttäen näkymän sidoksia.
+// Päivityksiin voi liittyä manuaalisesti tai käyttäen näkymän sitojia.
 store.subscribe(() =>
   console.log(store.getState())
 )
