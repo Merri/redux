@@ -1,11 +1,11 @@
 # [Redux](http://rackt.github.io/redux)
 
-Redux is a predictable state container for JavaScript apps.  
+Redux on ennustettava tilasäilö JavaScript-ohjelmille.  
 
-It helps you write applications that behave consistently, run in different environments (client, server, and native), and are easy to test. On top of that, it provides a great developer experience, such as [live code editing combined with a time traveling debugger](https://github.com/gaearon/redux-devtools).
+Voit tämän avulla kirjoittaa ohjelmia, jotka käyttäytyvät määrätysti, ovat suoritettavissa eri ympäristöissä (selaimessa, palvelimella ja natiiveina) sekä ovat helposti testattavissa. Näiden etujen lisäksi Redux tarjoaa hyvän käyttökokemuksen kehittäjälle, kuten [suorituksenaikaisen koodinmuokkauksen ja aikamatkaavan debuggerin](https://github.com/gaearon/redux-devtools).
 
-You can use Redux together with [React](https://facebook.github.io/react/), or with any other view library.  
-It is tiny (2kB) and has no dependencies.
+Reduxia voi käyttää yhdessä [Reactin](https://facebook.github.io/react/) tai minkä tahansa muun UI-kirjaston kanssa.  
+Redux on pieni (2 kt) ja sillä ei ole riippuvuuksia.
 
 [![build status](https://img.shields.io/travis/rackt/redux/master.svg?style=flat-square)](https://travis-ci.org/rackt/redux)
 [![npm version](https://img.shields.io/npm/v/redux.svg?style=flat-square)](https://www.npmjs.com/package/redux)
@@ -14,47 +14,47 @@ It is tiny (2kB) and has no dependencies.
 [![#rackt on freenode](https://img.shields.io/badge/irc-%23rackt%20%40%20freenode-61DAFB.svg?style=flat-square)](https://webchat.freenode.net/)
 [![Changelog #187](https://img.shields.io/badge/changelog-%23187-lightgrey.svg?style=flat-square)](https://changelog.com/187)
 
->**New! Learn Redux from its creator:  
->[Getting Started with Redux](https://egghead.io/series/getting-started-with-redux) (30 free videos)**
+>**Uutta! Opi Reduxia suoraan luojaltaan:  
+>[Alkuun Reduxin kanssa (Getting Started with Redux)](https://egghead.io/series/getting-started-with-redux) (30 englanninkielistä ilmaista videota)**
 
-### Testimonials
+### Arvostusta
 
->[“Love what you’re doing with Redux”](https://twitter.com/jingc/status/616608251463909376)  
->Jing Chen, creator of Flux
+>[“Pidän siitä mitä olet saanut aikaan Reduxilla”](https://twitter.com/jingc/status/616608251463909376)  
+>Jing Chen, Fluxin luoja
 
->[“I asked for comments on Redux in FB's internal JS discussion group, and it was universally praised. Really awesome work.”](https://twitter.com/fisherwebdev/status/616286955693682688)  
->Bill Fisher, author of Flux documentation
+>[“Pyysin mielipiteitä Reduxista Facebookin sisäisellä JS-kanavalla ja sitä kehuttiin laidasta laitaan. Todella hienoa työtä.”](https://twitter.com/fisherwebdev/status/616286955693682688)  
+>Bill Fisher, Flux-dokumentaation vastuuhenkilö
 
->[“It's cool that you are inventing a better Flux by not doing Flux at all.”](https://twitter.com/andrestaltz/status/616271392930201604)  
->André Staltz, creator of Cycle
+>[“On hienoa kuinka kehität paremman Fluxin ilman Fluxin häivääkään.”](https://twitter.com/andrestaltz/status/616271392930201604)  
+>André Staltz, Cyclen alkuunpanija
 
-### Developer Experience
+### Kehittäjän käyttökokemus
 
-I wrote Redux while working on my React Europe talk called [“Hot Reloading with Time Travel”](https://www.youtube.com/watch?v=xsSnOQynTHs). My goal was to create a state management library with minimal API but completely predictable behavior, so it is possible to implement logging, hot reloading, time travel, universal apps, record and replay, without any buy-in from the developer.
+Kirjoitin Reduxin työstäessäni React Europen esitystä [Välitön uusiolataaminen ja aikamatkustus (“Hot Reloading with Time Travel”)](https://www.youtube.com/watch?v=xsSnOQynTHs). Tavoitteeni oli luoda tilanhallintakirjasto minimalistisella API:lla ja silti ennustettavalla käyttäytymisellä, jotta olisi mahdollista kehittää lokitus, välitön uusiolatautuminen, aikamatkustus, universaalius, nauhoitus ja toisto ilman ylimääräistä lisätyötä kehittäjän toimesta.
 
-### Influences
+### Vaikutteet
 
-Redux evolves the ideas of [Flux](http://facebook.github.io/flux/), but avoids its complexity by taking cues from [Elm](https://github.com/evancz/elm-architecture-tutorial/).  
-Whether you have used them or not, Redux only takes a few minutes to get started with.
+Redux kehittää [Fluxin](http://facebook.github.io/flux/) ideoita, mutta välttää sen monimutkaisuutta ottaen inspiraatiota [Elmistä](https://github.com/evancz/elm-architecture-tutorial/).  
+Reduxilla pääsee nopeasti alkuun riippumatta siitä oletko käyttänyt kumpaakaan mainituista.
 
-### Installation
+### Asennus
 
-To install the stable version:
+Vakaan version asentamiseksi:
 
 ```
 npm install --save redux
 ```
 
-Most likely, you’ll also need [the React bindings](https://github.com/rackt/react-redux) and [the developer tools](https://github.com/gaearon/redux-devtools).
+Todennäköisimmin tarvitset myös [React-työkalut](https://github.com/rackt/react-redux) ja [kehitystyökalut](https://github.com/gaearon/redux-devtools).
 
 ```
 npm install --save react-redux
 npm install --save-dev redux-devtools
 ```
 
-This assumes that you’re using [npm](https://www.npmjs.com/) package manager with a module bundler like [Webpack](http://webpack.github.io) or [Browserify](http://browserify.org/) to consume [CommonJS modules](http://webpack.github.io/docs/commonjs.html).
+Oletuksena on että käytät [npm](https://www.npmjs.com/)-paketinhallintaa yhdessä moduuliniputtajan kuten [Webpackin](http://webpack.github.io) tai [Browserifyn](http://browserify.org/) kanssa, jotka syövät [CommonJS-moduuleja](http://webpack.github.io/docs/commonjs.html).
 
-If you don’t yet use [npm](https://www.npmjs.com/) or a modern module bundler, and would rather prefer a single-file [UMD](https://github.com/umdjs/umd) build that makes `Redux` available as a global object, you can grab a pre-built version from [cdnjs](https://cdnjs.com/libraries/redux). We *don’t* recommend this approach for any serious application, as most of the libraries complementary to Redux are only available on [npm](https://www.npmjs.com/).
+Mikäli et vielä käytä [npm:ää](https://www.npmjs.com/) tai modernia moduuliniputtajaa ja suosit mieluummin yhden tiedoston [UMD](https://github.com/umdjs/umd) buildia, joka tuo `Reduxin` saataville globaalina objektina, voit hakea valmiiksi luodun version [cdnjs:stä](https://cdnjs.com/libraries/redux). *Emme* suosittele tätä tapaa vakavaan käyttöön, sillä valtaosa Reduxia tukevista kirjastoista ovat ainoastaan saatavilla [npm:ssä](https://www.npmjs.com/).
 
 ### The Gist
 
