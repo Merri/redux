@@ -2,7 +2,7 @@
 
 Redux on ennustettava tilasäilö JavaScript-ohjelmille.  
 
-Voit tämän avulla kirjoittaa ohjelmia, jotka käyttäytyvät määrätysti, ovat suoritettavissa eri ympäristöissä (selaimessa, palvelimella ja natiiveina) sekä ovat helposti testattavissa. Näiden etujen lisäksi Redux tarjoaa hyvän käyttökokemuksen kehittäjälle, kuten [suorituksenaikaisen koodinmuokkauksen ja aikamatkaavan debuggerin](https://github.com/gaearon/redux-devtools).
+Sen avulla voi kirjoittaa ohjelmia, jotka käyttäytyvät määrätysti, ovat suoritettavissa eri ympäristöissä (selaimessa, palvelimella ja natiiveina) sekä ovat helposti testattavissa. Näiden etujen lisäksi Redux tarjoaa hyvän käyttökokemuksen kehittäjälle, kuten [suorituksenaikaisen koodinmuokkauksen ja aikamatkaavan debuggerin](https://github.com/gaearon/redux-devtools).
 
 Reduxia voi käyttää yhdessä [Reactin](https://facebook.github.io/react/) tai minkä tahansa muun näkymäkirjaston kanssa.  
 Redux on pieni (2 kt) ja sillä ei ole riippuvuuksia.
@@ -30,12 +30,12 @@ Redux on pieni (2 kt) ja sillä ei ole riippuvuuksia.
 
 ### Kehittäjän käyttökokemus
 
-Kirjoitin Reduxin työstäessäni React Europen esitystä [Välitön uusiolataaminen ja aikamatkustus (“Hot Reloading with Time Travel”)](https://www.youtube.com/watch?v=xsSnOQynTHs). Tavoitteeni oli luoda tilanhallintakirjasto minimalistisella API:lla ja silti ennustettavalla käyttäytymisellä, jotta olisi mahdollista kehittää lokitus, välitön uusiolatautuminen, aikamatkustus, universaalius, nauhoitus ja toisto ilman ylimääräistä lisätyötä kehittäjän toimesta.
+Kirjoitin Reduxin työstäessäni React Europen esitystä [Välitön uusiolataaminen ja aikamatkustus](https://www.youtube.com/watch?v=xsSnOQynTHs). Tavoitteeni oli luoda tilanhallintakirjasto minimalistisella API:lla ja silti ennustettavalla käyttäytymisellä, jotta olisi mahdollista kehittää lokitus, välitön uusiolatautuminen, aikamatkustus, universaalius, nauhoitus ja toisto ilman ylimääräistä lisätyötä kehittäjän toimesta.
 
 ### Vaikutteet
 
-Redux kehittää [Fluxin](http://facebook.github.io/flux/) ideoita, mutta välttää sen monimutkaisuutta ottaen inspiraatiota [Elmistä](https://github.com/evancz/elm-architecture-tutorial/).  
-Reduxilla pääsee nopeasti alkuun riippumatta siitä oletko käyttänyt kumpaakaan mainituista.
+Redux jalostaa [Fluxin](http://facebook.github.io/flux/) ideoita, mutta välttää sen monimutkaisuutta ottaen inspiraatiota [Elmistä](https://github.com/evancz/elm-architecture-tutorial/).  
+Reduxilla pääsee nopeasti alkuun riippumatta siitä onko käyttänyt kumpaakaan mainituista.
 
 ### Asennus
 
@@ -52,9 +52,9 @@ npm install --save react-redux
 npm install --save-dev redux-devtools
 ```
 
-Oletuksena on että käytät [npm](https://www.npmjs.com/)-paketinhallintaa yhdessä moduuliniputtajan kuten [Webpackin](http://webpack.github.io) tai [Browserifyn](http://browserify.org/) kanssa, jotka syövät [CommonJS-moduuleja](http://webpack.github.io/docs/commonjs.html).
+Oletuksena on että käytössä on [npm](https://www.npmjs.com/)-paketinhallinta yhdessä moduuliniputtajan kuten [Webpack](http://webpack.github.io) tai [Browserify](http://browserify.org/) kanssa. Ne syövät [CommonJS-moduuleja](http://webpack.github.io/docs/commonjs.html).
 
-Mikäli et vielä käytä [npm:ää](https://www.npmjs.com/) tai modernia moduuliniputtajaa ja suosit mieluummin yhden tiedoston [UMD](https://github.com/umdjs/umd) buildia, joka tuo `Reduxin` saataville globaalina objektina, voit hakea valmiiksi luodun version [cdnjs:stä](https://cdnjs.com/libraries/redux). *Emme* suosittele tätä tapaa vakavaan käyttöön, sillä valtaosa Reduxia tukevista kirjastoista ovat ainoastaan saatavilla [npm:ssä](https://www.npmjs.com/).
+Mikäli et vielä käytä [npm:ää](https://www.npmjs.com/) tai modernia moduuliniputtajaa ja suosit mieluummin yhden tiedoston [UMD](https://github.com/umdjs/umd) buildia, joka tuo `Reduxin` saataville globaalina objektina, voit hakea valmiiksi luodun version [cdnjs](https://cdnjs.com/libraries/redux):stä. *Emme* suosittele tätä tapaa vakavaan käyttöön, sillä valtaosa Reduxia tukevista kirjastoista on ainoastaan saatavilla [npm](https://www.npmjs.com/):ssä.
 
 ### Pähkinänkuoressa
 
