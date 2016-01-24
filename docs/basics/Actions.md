@@ -29,7 +29,7 @@ import { ADD_TODO, REMOVE_TODO } from '../actionTypes'
 
 Muutoin kuin `type`:n osalta voit määrittää toiminto-objektin kuten haluat. Voit tutustua [Fluxin perustoimintoihin](https://github.com/acdlite/flux-standard-action) (englanniksi) nähdäksesi suosituksia siitä, kuinka toimintoja voi rakentaa.
 
-Lisäämme yhden toimintotyypin kuvastaaksemme sitä, kun käyttäjä merkitsee todorivin tehdyksi. Viittaamme todoon käyttäen `index`:iä, koska säilmme niitä taulukossa. Oikeassa ohjelmassa on fiksumpaa luoda uniikki ID jokaisella uudelle luodulle asialle.
+Lisäämme yhden toimintotyypin kuvastaaksemme sitä, kun käyttäjä merkitsee todorivin tehdyksi. Viittaamme todoon käyttäen `index`:iä, koska säilömme niitä taulukossa. Oikeassa ohjelmassa on fiksumpaa luoda uniikki ID jokaiselle uudelle luodulle asialle.
 
 ```js
 {
