@@ -17,7 +17,7 @@
 * [Kehittynyt käyttö](/docs/advanced/README.md)
   * [Asynkroniset toiminnot](/docs/advanced/AsyncActions.md)
   * [Asynkroninen tiedonkulku](/docs/advanced/AsyncFlow.md)
-  * [Välityökalut (middleware)](/docs/advanced/Middleware.md)
+  * [Middleware](/docs/advanced/Middleware.md)
   * Käyttö React Routerin kanssa
   * [Esimerkki: Reddit API](/docs/advanced/ExampleRedditAPI.md)
   * Seuraavat askeleet
