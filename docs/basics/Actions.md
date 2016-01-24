@@ -29,7 +29,7 @@ import { ADD_TODO, REMOVE_TODO } from '../actionTypes'
 
 Muutoin kuin `type`:n osalta voit määrittää toiminto-objektin kuten haluat. Voit tutustua [Fluxin perustoimintoihin](https://github.com/acdlite/flux-standard-action) (englanniksi) nähdäksesi suosituksia siitä, kuinka toimintoja voi rakentaa.
 
-We’ll add one more action type to describe a user ticking off a todo as completed. We refer to a particular todo by `index` because we store them in an array. In a real app, it is wiser to generate a unique ID every time something new is created.
+Lisäämme yhden toimintotyypin kuvastaaksemme sitä, kun käyttäjä merkitsee todorivin tehdyksi. Viittaamme todoon käyttäen `index`:iä, koska säilmme niitä taulukossa. Oikeassa ohjelmassa on fiksumpaa luoda uniikki ID jokaisella uudelle luodulle asialle.
 
 ```js
 {
@@ -38,9 +38,9 @@ We’ll add one more action type to describe a user ticking off a todo as comple
 }
 ```
 
-It’s a good idea to pass as little data in each action as possible. For example, it’s better to pass `index` than the whole todo object.
+On hyvä idea kuljetuttaa kussakin toiminnossa niin vähän tietoa kuin vain mahdollista. Esimerkiksi on parempi kuljettaa indeksiä kuin koko todo-objektia.
 
-Finally, we’ll add one more action type for changing the currently visible todos.
+Lopuksi lisäämme vielä yhden toimintotyypin vaihtamaan näytettyjen todojen tilaa.
 
 ```js
 {
