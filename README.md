@@ -173,7 +173,7 @@ Liity [#redux](https://discord.gg/0ZcbPKXt5bZ6au5t)-kanavalle [Reactiflux](http:
 * [Tietokannan kääntö nurinkurin](http://www.confluent.io/blog/turning-the-database-inside-out-with-apache-samza/) räjäytti mieleni;
 * [Kehittäminen ClojureScriptillä käyttäen Figwheeliä](https://www.youtube.com/watch?v=j-kj2qwJa_E) vakuutti minut siitä, että uudelleenevaluoinnin tulisi toimia suorilta;
 * [Webpackille](https://github.com/webpack/docs/wiki/hot-module-replacement-with-webpack) välittömästä moduulin korvauksesta;
-* [Flummox](https://github.com/acdlite/flummox) opetti minulle lähestymisen Fluxiin välttäen turhan boilerplaten ja singletoneihin tukeutumisen;
+* [Flummox](https://github.com/acdlite/flummox) opetti minulle lähestymisen Fluxiin välttäen turhaan pohjustuskoodiin ja singletoneihin tukeutumisen;
 * [disto](https://github.com/threepointone/disto) toimi näytteenä säilöjen välittömästä uudelleenlatauksesta;
 * [NuclearJS](https://github.com/optimizely/nuclear-js) osoitti sen, että tämänkaltainen arkkitehtuuri voi olla suorituskykyinen;
 * [Om](https://github.com/omcljs/om) popularisoi idean yksittäisestä lähdetilasta;
