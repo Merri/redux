@@ -114,6 +114,30 @@ Mikäli taustasi on Fluxissa, niin on yksi tärkeä asia joka tulee huomioida. R
 
 Tämänkaltainen arkkitehtuuri voi vaikuttaa liioittelulta laskuriohjelmalle, mutta tämän toimintamallin etuna on se, kuinka hyvin se skaalautuu suuriin ja monimutkaisiin ohjelmistoihin. Lisäksi tämä toimintamalli mahdollistaa erittäin hyödylliset kehitystyökalut, sillä jokainen mutaatio on mahdollista jäljittää toimintoon, joka sen aiheutti. Voit esimerkiksi nauhoittaa käyttäjäsessioita ja toistaa ne ajamalla niiden toiminnot järjestyksessä.
 
+### Dokumentaatio (linkit päivittämättä)
+
+* [Esittely](http://rackt.github.io/redux/docs/introduction/index.html)
+* [Perusteet](http://rackt.github.io/redux/docs/basics/index.html)
+* [Kehittynyt käyttö](http://rackt.github.io/redux/docs/advanced/index.html)
+* [Reseptit](http://rackt.github.io/redux/docs/recipes/index.html)
+* [Ongelmienratkaisu](http://rackt.github.io/redux/docs/Troubleshooting.html)
+* [Sanasto](http://rackt.github.io/redux/docs/Glossary.html)
+* [API](http://rackt.github.io/redux/docs/api/index.html)
+
+Halutessasi PDF-, ePub- tai MOBI-version offlinelukemista varten, sekä löytääksesi ohjeet kuinka luoda ne, katso see: [paulkogel/redux-offline-docs](https://github.com/paulkogel/redux-offline-docs) (englanniksi).
+
+### Esimerkkejä (linkit päivittämättä)
+
+* [Laskuri](http://rackt.github.io/redux/docs/introduction/Examples.html#counter) ([lähdekoodi](https://github.com/rackt/redux/tree/master/examples/counter))
+* [TodoMVC](http://rackt.github.io/redux/docs/introduction/Examples.html#todomvc) ([lähdekoodi](https://github.com/rackt/redux/tree/master/examples/todomvc))
+* [Todo ja peruminen](http://rackt.github.io/redux/docs/introduction/Examples.html#todos-with-undo) ([lähdekoodi](https://github.com/rackt/redux/tree/master/examples/todos-with-undo))
+* [Asynkronisuus](http://rackt.github.io/redux/docs/introduction/Examples.html#async) ([lähdekoodi](https://github.com/rackt/redux/tree/master/examples/async))
+* [Universaalius](http://rackt.github.io/redux/docs/introduction/Examples.html#universal) ([lähdekoodi](https://github.com/rackt/redux/tree/master/examples/universal))
+* [Oikea maailma](http://rackt.github.io/redux/docs/introduction/Examples.html#real-world) ([lähdekoodi](https://github.com/rackt/redux/tree/master/examples/real-world))
+* [Ostoskori](http://rackt.github.io/redux/docs/introduction/Examples.html#shopping-cart) ([lähdekoodi](https://github.com/rackt/redux/tree/master/examples/shopping-cart))
+
+Jos NPM on uusi asia ja et pääse vauhtiin projektin kanssa, tai jos et ole varma minne pastettaa ylläolevia gistejä, niin kurkkaa [simplest-redux-example](https://github.com/jackielii/simplest-redux-example), joka käyttää Reduxia yhdessä Reactin ja Browserifyn kanssa.
+
 ### Opi Reduxia suoraan luojaltaan
 
 [Alkuun Reduxin kanssa](https://egghead.io/series/getting-started-with-redux) on videokurssi, joka koostuu 30:sta Dan Abramovin, Reduxin luojan, juontamasta jaksosta. Se on luotu täydentämään dokumentaation perusteiden osioita tuoden kuitenkin lisää näkemystä asioihin kuten mutatoimattomuuteen, testaukseen, Reduxin suositeltuihin käytänöihin sekä Reduxin käyttöön Reactin kanssa. **Kurssi on ilmainen ja tulee aina olemaan.**
@@ -138,30 +162,6 @@ Joten mitä vielä odotat?
 #### [Katso 30 ilmaista videota!](https://egghead.io/series/getting-started-with-redux) (englanniksi)
 
 Jos pidit kurssista, niin harkitsethan Eggheadin tukemista [alkamalla tilaajaksi](https://egghead.io/pricing). Tilaajat saavat pääsyn lähdekoodiin jokaisessa videossani, sekä pääsyn lukuisiin muihin kehittyneisiin oppitunteihin muista aiheissa mukaanlukien JavaScript, React, Angular ja monta muuta. Monet [Eggheadin kouluttajista](https://egghead.io/instructors) ovat myös avoimen lähdekoodin kirjastojen tekijöitä, joten tilaus on hieno tapa kiittää heitä heidän tekemästään työstä.
-
-### Dokumentaatio (linkit päivittämättä)
-
-* [Esittely](http://rackt.github.io/redux/docs/introduction/index.html)
-* [Perusteet](http://rackt.github.io/redux/docs/basics/index.html)
-* [Kehittynyt käyttö](http://rackt.github.io/redux/docs/advanced/index.html)
-* [Reseptit](http://rackt.github.io/redux/docs/recipes/index.html)
-* [Ongelmienratkaisu](http://rackt.github.io/redux/docs/Troubleshooting.html)
-* [Sanasto](http://rackt.github.io/redux/docs/Glossary.html)
-* [API](http://rackt.github.io/redux/docs/api/index.html)
-
-Halutessasi PDF-, ePub- tai MOBI-version offlinelukemista varten, sekä löytääksesi ohjeet kuinka luoda ne, katso see: [paulkogel/redux-offline-docs](https://github.com/paulkogel/redux-offline-docs) (englanniksi).
-
-### Esimerkkejä (linkit päivittämättä)
-
-* [Laskuri](http://rackt.github.io/redux/docs/introduction/Examples.html#counter) ([source](https://github.com/rackt/redux/tree/master/examples/counter))
-* [TodoMVC](http://rackt.github.io/redux/docs/introduction/Examples.html#todomvc) ([source](https://github.com/rackt/redux/tree/master/examples/todomvc))
-* [Todo ja peruminen](http://rackt.github.io/redux/docs/introduction/Examples.html#todos-with-undo) ([source](https://github.com/rackt/redux/tree/master/examples/todos-with-undo))
-* [Asynkronisuus](http://rackt.github.io/redux/docs/introduction/Examples.html#async) ([source](https://github.com/rackt/redux/tree/master/examples/async))
-* [Universaalius](http://rackt.github.io/redux/docs/introduction/Examples.html#universal) ([source](https://github.com/rackt/redux/tree/master/examples/universal))
-* [Oikea maailma](http://rackt.github.io/redux/docs/introduction/Examples.html#real-world) ([source](https://github.com/rackt/redux/tree/master/examples/real-world))
-* [Ostoskori](http://rackt.github.io/redux/docs/introduction/Examples.html#shopping-cart) ([source](https://github.com/rackt/redux/tree/master/examples/shopping-cart))
-
-Jos NPM on uusi asia ja et pääse vauhtiin projektin kanssa, tai jos et ole varma minne pastettaa ylläolevia gistejä, niin kurkkaa [simplest-redux-example](https://github.com/jackielii/simplest-redux-example), joka käyttää Reduxia yhdessä Reactin ja Browserifyn kanssa.
 
 ### Keskustelu
 
