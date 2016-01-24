@@ -187,7 +187,7 @@ Erityiskiitokset [Jamie Patonille](http://jdpaton.github.io) `redux`-pakettinime
 Tämä projekti noudattaa [semanttista versiointia](http://semver.org/).  
 Jokainen julkaisu migraatio-ohjeineen on dokumentoitu Githubin [Releases](https://github.com/rackt/redux/releases)-sivulla.
 
-### Tukijat (patrons)
+### Tukijat
 
 Työ Reduxin eteen on [yhteisön rahoittama](https://www.patreon.com/reactdx).  
 Tässä osa mahtavista yrityksistä, jotka tekivät työn mahdolliseksi:
@@ -197,6 +197,6 @@ Tässä osa mahtavista yrityksistä, jotka tekivät työn mahdolliseksi:
 
 [Katso koko lista Reduxin tukijoista.](PATRONS.md)
 
-### License
+### Lisenssi
 
 MIT

@@ -21,7 +21,7 @@
   * Käyttö React Routerin kanssa
   * [Esimerkki: Reddit API](/docs/advanced/ExampleRedditAPI.md)
   * Seuraavat askeleet
-* [Reseptit (recipes)](/docs/recipes/README.md)
+* [Reseptit](/docs/recipes/README.md)
   * [Migraatio reduxiin](/docs/recipes/MigratingToRedux.md)
   * [Pohjustuskoodin vähentäminen](/docs/recipes/ReducingBoilerplate.md)
   * [Palvelinrenderöinti](/docs/recipes/ServerRendering.md)
@@ -38,4 +38,4 @@
   * [bindActionCreators](/docs/api/bindActionCreators.md)
   * [compose](/docs/api/compose.md)
 * [Muutosloki](/CHANGELOG.md)
-* [Tukijat (patrons)](/PATRONS.md)
+* [Tukijat](/PATRONS.md)
